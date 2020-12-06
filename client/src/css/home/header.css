@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Righteous&display=swap');
+
+.header-title {
+  font-family: 'Righteous', cursive;
+}
+
+.header-links {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+@media only screen and (max-width: 480px) {
+
+}

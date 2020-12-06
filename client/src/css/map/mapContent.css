@@ -1,0 +1,11 @@
+.map-content {
+    min-height: calc(100vh - 90px);
+    background-color: aliceblue;
+  }
+  
+  .map-content .map-container {
+    width: 100%;
+    height: calc(100vh - 90px);
+    background-color: aqua;
+  }
+  

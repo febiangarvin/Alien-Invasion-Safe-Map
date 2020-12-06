@@ -1,0 +1,418 @@
+.about {
+    background-color: rgba(0, 0, 0, 0.800);
+    margin-top: 0px;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
+  .about >h2 {
+    color: #EDEDED;
+    text-align: center;
+    padding-top: 80px;
+    font-size: 40px;
+    font-family: 'Righteous', cursive;
+    font-weight: 500;
+  }
+  
+  .about >h4 {
+    color: #EDEDED;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 30px;
+    font-family: Montserrat, Overpass,Trebuchet MS,Arial,sans-serif;
+    font-weight: 500;
+  }
+  
+  .about >p {
+    color: #EDEDED;
+    text-align: center;
+    font-size: 20px;
+    font-family: Montserrat, Overpass,Trebuchet MS,Arial,sans-serif;
+    font-weight: 400;
+  }
+
+  .about > img {
+    width: 550px;
+    height: 350px;
+    margin-left: 350px;
+    margin-top: 20px;
+  }
+  
+  .about .about-item{
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 15px;
+    text-align: center;
+    display: flex;
+  }
+  
+  .about .about-item .about-info{
+    float: center;
+    padding-left: 175px;
+    margin-bottom: 20px;
+  }
+  
+  .about .about-item .title{
+    font-size: 30px;
+    color: white;
+    font-weight: 400;
+    font-family: 'Montserrat';
+    margin: 0;
+    padding-top: 10px;
+  }
+  
+  .about .about-item .sub-title{
+    font-size: 20px;
+    color: whitesmoke;
+    font-weight: 300;
+    font-family: Montserrat, Overpass,Trebuchet MS,Arial,sans-serif;
+    margin: 0;
+  }
+  
+  .about .about-item .about-picture {
+    margin-left: 500px;
+  }
+  
+  .about .about-item .about-picture img{
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    margin-top: 1px;
+    display: block;
+    object-fit: cover;
+    justify-content: center;
+  }
+
+.mouse-center {
+    background: #262626;
+    margin: 0 auto;
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .mouse-layout {
+    width: 100px;
+    height: 150px;
+    background: transparent;
+    border: 8px solid #fff;
+    border-radius: 50px;
+    position: relative;
+  }
+
+  .mouse-layout::before {
+    content: '';
+    border: 8px solid #fff;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    animation: drop 1s linear infinite;
+  }
+
+  .mouse-layout::after {
+    content: '';
+    border: 6px solid #fff;
+    height: 20px;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    animation: all 2s ease;
+  }
+
+  @keyframes drop {
+    0% {
+      transform: translate(-50%, 30px);
+      opacity: 0;
+    }
+    60% {
+      transform: translate(-50%, 70px);
+      opacity: 0.8;
+    }
+    100% {
+      transform: translate(-50%, 80px);
+      opacity: 1;
+    }
+  }
+
+  .mouse-text {
+    margin-top: 50px;
+    font-family: Montserrat, Overpass,Trebuchet MS,Arial,sans-serif;
+    font-size: 1em;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+
+  .id-card {
+    margin-left: 450px;
+    position: relative;
+    width: 356px;
+    height: 375px;
+    text-align: center;
+    overflow: hidden;
+    background: url('../../img/fga.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  }
+
+  .id-card .id-surface {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 0;
+    opacity: 0;
+    background: black;
+    transition: 0.2s linear;
+  }
+
+  .id-card h1 {
+    letter-spacing: 1px;
+    font-size: 26px;
+    color: #f1f1f1;
+    opacity: 0;
+    transform: translateX(30px) translateY(200px);
+    transition: 0.4s;
+  }
+
+  .id-card h3 {
+    letter-spacing: 1px;
+    font-size: 14px;
+    color: black;
+    opacity: 0;
+    transform: translateX(270px) translateY(28px);
+    transition: 0.4s;
+  }
+
+  .id-card .fab {
+    cursor: pointer;
+    display: flex;
+    width: 30px;
+    height: 30px;
+    padding: 7px 8px;
+    font-size: 16px;
+    color: green;
+    background: #ffffff;
+    border-radius: 50%;
+    margin: 10px;
+    opacity: 0;
+    transform: translateY(135px) translateX(-50px);
+    transition: 0.3s;
+  }
+
+  .id-card:hover .id-surafce {
+    opacity: 0.8;
+    height: 45%;
+  }
+
+  .id-card:hover h1 {
+    opacity: 1;
+    transform: translateX(30px) translateY(210px);
+    transition-delay: 0.4s;
+  }
+
+  .id-card h3 {
+    opacity: 1;
+    transform: translateY(230px) translateX(28px);
+    transition-delay: 0.8s;
+  }
+
+  .id-card:hover .fab {
+    opacity: 1;
+    transform: translateY(135px) translateX(5px);
+  }
+
+  .timeline-container {
+    position: relative;
+    width: 600px;
+    margin: 150px auto 0 auto;
+  }
+
+  .timeline-container::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: #f5f5f5;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+  }
+
+  .text-wrapper {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+    box-sizing: border-box;
+    margin: 50px 0;
+  }
+
+  .text-wrapper::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: -10px;
+    background-color: green;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+  }
+
+  .left {
+    left: 0;
+  }
+
+  .right {
+    left: 50%;
+  }
+
+  .right::after {
+    left: -10px;
+  }
+
+  .text {
+    padding: 15px 15px 15px 17px;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+  }
+
+  .text > h3 {
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #212121;
+    letter-spacing: 1px;
+  }
+
+  .text > p {
+    color: #616161;
+    font-weight: 300;
+    font-size: 18px;
+    margin-top: 2px;
+  }
+
+  .button-row {
+    display: inline-flex;
+    padding-left: 50px;
+    margin-bottom: 25px;
+    margin-top: 25px;
+  }
+
+  .button-row-admin {
+    display: inline-flex;
+    padding-left: 275px;
+    margin-bottom: 25px;
+    margin-top: 25px;
+  }
+
+  .glowing-button-small > a {
+    position: relative;
+    height: 100px;
+    width: 200px;
+    border-radius: 5px;
+    border: 1px;
+    border-color: white;
+    outline: none;
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-left: 50px;
+  }
+
+  .glowing-button-small:hover > a {
+    background: linear-gradient(90deg, #fa7199, #f5ce62, #e43603, #fa7199);
+    background-size: 400%;
+  }
+
+  .glowing-button-small:before > a {
+    content: '';
+    position: absolute;
+    background: inherit;
+    top: -5px;
+    right: -5px;
+    left: -5px;
+    bottom: -5px;
+    border-radius: 50px;
+    filter: blur(20px);
+    opacity: 0;
+    transition: opacity 0.5s;
+  }
+
+  .glowing-button-small:hover > a:before{
+    opacity: 1;
+    z-index: -1;
+  }
+
+  .glowing-button-small > a:hover {
+    z-index: 1;
+    animation: glow 8s linear infinite;
+  }
+
+  @keyframes glow {
+    0% { background-position: 0%;}
+    100% { background-position: 400%;}
+  }
+
+  .glowing-button > a {
+    position: relative;
+    height: 100px;
+    width: 200px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 40px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-left: 475px;
+  }
+
+  .glowing-button:hover > a {
+    background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+    background-size: 400%;
+  }
+
+  .glowing-button:before > a {
+    content: '';
+    position: absolute;
+    background: inherit;
+    top: -5px;
+    right: -5px;
+    left: -5px;
+    bottom: -5px;
+    border-radius: 50px;
+    filter: blur(20px);
+    opacity: 0;
+    transition: opacity 0.5s;
+  }
+
+  .glowing-button:hover > a:before{
+    opacity: 1;
+    z-index: -1;
+  }
+
+  .glowing-button > a:hover {
+    z-index: 1;
+    animation: glow 8s linear infinite;
+  }
+
+  @keyframes glow {
+    0% { background-position: 0%;}
+    100% { background-position: 400%;}
+  }

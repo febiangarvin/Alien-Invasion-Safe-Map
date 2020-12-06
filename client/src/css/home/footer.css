@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css?family=Righteous&display=swap');
+
+.title {
+    font-family: 'Righteous', cursive;
+    font-size: 25px;
+}
+
+.web-description {
+    font-size: 20px;
+    text-align: justify;
+}
+
+.footer-logo {
+    font-size: 40px;
+    margin-top: 5px;
+}
